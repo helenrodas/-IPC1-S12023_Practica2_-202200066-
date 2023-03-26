@@ -709,6 +709,7 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
 
        int tiempoAnterior = 0;
+       int contadorTotal = 0;
        String tiempoInventario = txtTiempoInventario.getText().trim();
        String costoInventario = txtCostoInventario.getText().trim();
        String tiempoProduccion = txtTiempoProduccion.getText().trim();
@@ -825,6 +826,7 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
         SetearInvRojo.start();
         SetearInvBlanco.start();
         
+ 
         CColorCuadros AgregarColorVerde = new CColorCuadros(listaCuadradosProduccion ,tiempoInventarioMilisegundos, Color.GREEN);
         CColorCuadros AgregarColorBlancoEnVerde = new CColorCuadros(listaCuadradosProduccion ,tiempoProduccionMilisegundos, Color.WHITE);
 

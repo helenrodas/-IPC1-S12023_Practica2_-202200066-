@@ -33,7 +33,7 @@ public class CBolaInicial extends Thread {
         totalPelotasIniciadas = 61;
         while (count <= 60 && totalPelotasIniciadas>-1) {
             try {
-                Thread.sleep(duracionSleep);
+                Thread.sleep(500);
                 
                 count++;
                 totalPelotasIniciadas--;
