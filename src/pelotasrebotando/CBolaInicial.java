@@ -15,14 +15,11 @@ public class CBolaInicial extends Thread {
     private JLabel label;
     private int count;
     private int totalPelotasIniciadas = 30;
-    private final int duracionSleep =1000;
-    private JTextField txtLog;
     private JTextField txtContadorInicio;
     
 
     public CBolaInicial(JLabel label, JTextField txtContadorInicio) {
         this.label = label;
-        this.txtLog = txtLog;
         this.txtContadorInicio = txtContadorInicio;
         
     }
@@ -37,7 +34,6 @@ public class CBolaInicial extends Thread {
                 
                 count++;
                 totalPelotasIniciadas--;
-                //txtLog.setText(String.valueOf(count));
                 
                 txtContadorInicio.setText(String.valueOf(totalPelotasIniciadas/2));
                 

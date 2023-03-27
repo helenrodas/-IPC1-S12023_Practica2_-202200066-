@@ -5,6 +5,7 @@
 package pelotasrebotando;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -16,14 +17,12 @@ public class CBolaFinal extends Thread {
     private JLabel label;
     private int count;
     private int totalPelotasIniciadas = 30;
-    private JTextField txtLog;
     private JTextField txtContadorFinal;
     private int tiempo;
     private CRelojDigital reloj;
 
     public CBolaFinal(JLabel label,  JTextField txtContadorFinal, int tiempo, CRelojDigital reloj) {
         this.label = label;
-        this.txtLog = txtLog;
         this.txtContadorFinal = txtContadorFinal;
         this.tiempo = tiempo;
         this.reloj = reloj;
@@ -44,6 +43,7 @@ public class CBolaFinal extends Thread {
 
             if (count == totalPelotasIniciadas) {
                 reloj.stop();
+                JOptionPane.showMessageDialog(null, "El programa ha terminado con exito!");
                 break;
             }
         }

@@ -36,7 +36,7 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="21" max="32767" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -244,9 +244,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCostoInventario">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3"/>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCostoInventarioActionPerformed"/>
           </Events>
@@ -296,9 +293,6 @@
         <Component class="javax.swing.JTextField" name="txtTiempoProduccion">
         </Component>
         <Component class="javax.swing.JTextField" name="txtCostoProduccion">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3"/>
-          </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
@@ -348,9 +342,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCostoEmpaquetado">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3"/>
-          </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel4">
           <Properties>
@@ -397,9 +388,6 @@
         <Component class="javax.swing.JTextField" name="txtTiempoSalida">
         </Component>
         <Component class="javax.swing.JTextField" name="txtCostoSalida">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnIniciar">
           <Properties>

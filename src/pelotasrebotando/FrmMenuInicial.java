@@ -143,7 +143,6 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
             }
         });
 
-        txtCostoInventario.setText("3");
         txtCostoInventario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCostoInventarioActionPerformed(evt);
@@ -170,8 +169,6 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel3)
         );
-
-        txtCostoProduccion.setText("3");
 
         jPanel3.setBackground(new java.awt.Color(51, 204, 255));
         jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -200,8 +197,6 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
             }
         });
 
-        txtCostoEmpaquetado.setText("3");
-
         jPanel4.setBackground(new java.awt.Color(255, 204, 153));
         jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel4.setForeground(new java.awt.Color(153, 204, 255));
@@ -222,8 +217,6 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-
-        txtCostoSalida.setText("3");
 
         btnIniciar.setBackground(new java.awt.Color(204, 255, 204));
         btnIniciar.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
@@ -574,7 +567,7 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(468, 468, 468)
                         .addComponent(jLabel1)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -794,20 +787,16 @@ public class FrmMenuInicial extends javax.swing.JFrame implements Observer {
         
         
        //---Conversion de Segundos ingresados a milisegundos
-        //String tiempoInventario = txtTiempoInventario.getText().trim();
-        //int tiempoInventarioAsInt = Integer.parseInt(tiempoInventario);
+
         int tiempoInventarioMilisegundos = tiempoInventarioAsInt * 1000;
         
-       // String tiempoProduccion = txtTiempoProduccion.getText().trim();
-        //int tiempoProduccionAsInt = Integer.parseInt(tiempoProduccion);
+
         int tiempoProduccionMilisegundos = tiempoProduccionAsInt * 1000;
         
-        //String tiempoEmpaquetado = txtTiempoEmpaquetado.getText().trim();
-       // int tiempoEmpaquetadoAsInt = Integer.parseInt(tiempoEmpaquetado);
+
         int tiempoEmpaquetadoMilisegundos = tiempoEmpaquetadoAsInt * 1000;
         
-        //String tiempoSalida = txtTiempoSalida.getText().trim();
-        //int tiempoSalidaAsInt = Integer.parseInt(tiempoSalida);
+
         int tiempoSalidaMilisegundos = tiempoSalidaAsInt * 1000;
         
         this.btnIniciar.setEnabled(false);

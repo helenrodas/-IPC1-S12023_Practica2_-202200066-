@@ -7,14 +7,14 @@ package pelotasrebotando;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JPanel;
+
+
 public class CColorCuadros extends Thread{
  private final ArrayList<JPanel> listaCuadrados; 
  int indice = 0;
  int delayEnMilis = 0; //tiempo en milisegundos que tarda en tarea anterior
  Color color;
  
-
-              
 
     public CColorCuadros(ArrayList<JPanel> listaCuadrados, int delayEnMilis, Color color) {
         this.listaCuadrados = listaCuadrados;
